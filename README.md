@@ -1,2 +1,3 @@
+
 VIDEO
-![GIF](frag2.gif)
+![GIF](home2.gif)
