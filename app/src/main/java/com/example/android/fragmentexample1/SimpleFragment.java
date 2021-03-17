@@ -1,5 +1,6 @@
 package com.example.android.fragmentexample1;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -42,13 +43,8 @@ public class SimpleFragment extends Fragment {
      * @return A new instance of fragment SimpleFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static SimpleFragment newInstance(String param1, String param2) {
-        SimpleFragment fragment = new SimpleFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+    public static SimpleFragment newInstance() {
+        return new SimpleFragment();
     }
 
     @Override
@@ -59,6 +55,7 @@ public class SimpleFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

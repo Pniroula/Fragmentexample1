@@ -1,2 +1,2 @@
 VIDEO
-![GIF](rating.gif)
+![GIF](frag2.gif)
